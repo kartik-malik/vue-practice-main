@@ -1,3 +1,4 @@
+import { defineAsyncComponent } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import CoachDetails from './pages/coaches/CoachDetails.vue';
 import CoachesList from './pages/coaches/CoachesList.vue';
@@ -7,6 +8,9 @@ import RequestsRecieved from './pages/requests/RequestsRecieved.vue';
 import NotFound from './pages/NotFound.vue';
 import UserAuth from './pages/auth/UserAuth.vue';
 import store from './store/index';
+// const CoachDetails = defineAsyncComponent(() =>
+//   import('./pages/coaches/CoachDetails.vue')
+// );
 const router = createRouter({
   history: createWebHistory(),
   routes: [
